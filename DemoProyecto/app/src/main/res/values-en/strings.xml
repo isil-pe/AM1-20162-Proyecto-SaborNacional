@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">National Flavor</string>
+    <string name="sabor_nacional">National Flavor</string>
+    <string name="nombre">Enter your name</string>
+    <string name="correo">Enter an email</string>
+    <string name="notificacion">Receive notifications</string>
+    <string name="iniciar">Begin</string>
+    <string name="errorCampos">Check fields</string>
+    <string name="errorNombre">Enter a name</string>
+    <string name="errorCorreo">Enter an email</string>
+    <string name="errorCorreo2">Enter a valid email</string>
+    <string name="bienvenido">Welcome</string>
+    <string name="intro">National flavor provides you with information about the various dishes of Peru. You can find your favorite foods for specific places such as provinces and regions. Begins to discover the best of Peru!</string>
+    <string name="costa">Coast</string>
+    <string name="sierra">Mountains</string>
+    <string name="selva">Jungle</string>
+    <string name="info">About us</string>
+    <string name="des_1">Mobile Applications I - Final Project</string>
+    <string name="des_2">Ivan Fernandez Tazza</string>
+    <string name="des_3">Date Created: 10/01/2016</string>
+    <string name="reg_costa">Coast Region</string>
+    <string name="reg_sierra">Mountains Region</string>
+    <string name="reg_selva">Jungle Region</string>
+    <string name="reg_costa_def">Peru is one of the richest Latin American countries in their food selection. Its vegetables, fruits and seeds are among the most varied in the American region given their extensive and prolific climate that divides its agricultural regions at different levels.</string>
+    <string name="reg_sierra_def">The Peruvian Andes is characterized by remembrances of prehispanic cultures in their traditional foods. So the presence of potatoes, beans and corn, naturally elements were used by native colonies of Peruvian valleys.</string>
+    <string name="reg_selva_def">The Peruvian jungle, privileged for its biodiversity, makes this region one of the places in the world that are characterized by the variety and richness of the dishes could even mention that when the exotic mixed with wit and kindness of the nature, can be obtained extraordinary dishes.</string>
+    <string name="cerrar_sesion">Logout</string>
+    <string name="descripcion">Description:</string>
+    <string name="provincia">Province:</string>
+</resources>

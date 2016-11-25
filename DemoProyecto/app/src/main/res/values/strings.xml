@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Sabor Nacional</string>
+    <string name="sabor_nacional">Sabor Nacional</string>
+    <string name="nombre">Ingresa tu nombre</string>
+    <string name="correo">Ingresa un correo</string>
+    <string name="notificacion">Recibir notificaciones</string>
+    <string name="iniciar">Iniciar</string>
+    <string name="errorCampos">Revisar campos</string>
+    <string name="errorNombre">Ingresa un nombre</string>
+    <string name="errorCorreo">Ingresa un correo</string>
+    <string name="errorCorreo2">Ingrese un correo válido</string>
+    <string name="bienvenido">Bienvenido</string>
+    <string name="intro">Sabor Nacional te provee información sobre los distintos platos típicos del Perú. Podrás buscar tus comidas favoritas por lugares específicos como provinciaRepository y regiones. Empieza a descubrir lo mejor del Perú!</string>
+    <string name="costa">Costa</string>
+    <string name="sierra">Sierra</string>
+    <string name="selva">Selva</string>
+    <string name="info">Acerca de nosotros</string>
+    <string name="des_1">Aplicaciones Móviles I - Proyecto Final</string>
+    <string name="des_2">Iván Fernández Tazza</string>
+    <string name="des_3">Fecha de creación: 1/10/2016</string>
+    <string name="reg_costa">Región de la Costa</string>
+    <string name="reg_sierra">Región de la Sierra</string>
+    <string name="reg_selva">Región de la Selva</string>
+    <string name="reg_costa_def">El Perú es uno de los países latinoamericanos más ricos en su selección alimenticia. Sus verduras, frutas y semillas son de los más variadas en la región americana dado su extenso y prolífico clima que divide sus regiones agrícolas en diversos niveles.</string>
+    <string name="reg_sierra_def">La sierra peruana se caracteriza por tener remembranzas de las culturas prehispánicas en sus comidas típicas. Por eso la presencia de las papas, habas y maíz, elementos que naturalmente fueron utilizados por las colonias nativas de los valles peruanos.</string>
+    <string name="reg_selva_def">La selva peruana, privilegiada por su biodiversidad, convierte a esta región en uno de los lugares del planeta que se caracterizan por la variedad e exquisitez de sus platos, incluso, podríamos mencionar que cuando lo exótico se mezcla con el ingenio y las bondades de la naturaleza, se pueden obtener platos extraordinarios.</string>
+    <string name="cerrar_sesion">Cerrar sesión</string>
+    <string name="descripcion">Descripción:</string>
+    <string name="provincia">Provincia:</string>
+</resources>

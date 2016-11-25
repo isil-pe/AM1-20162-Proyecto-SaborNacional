@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ivan.com.example.usuario.demoproyecto01">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".LoginActivity"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Home">
+
+        </activity>
+        <activity android:name=".Costa" />
+        <activity android:name=".Sierra" />
+        <activity android:name=".Selva" />
+        <activity
+            android:name=".Info"
+            android:theme="@style/Theme.AppCompat.Dialog" />
+        <activity
+            android:name=".InfoCosta"
+            android:theme="@style/Theme.AppCompat.Dialog" />
+        <activity
+            android:name=".InfoSierra"
+            android:theme="@style/Theme.AppCompat.Dialog" />
+        <activity
+            android:name=".InfoSelva"
+            android:theme="@style/Theme.AppCompat.Dialog" />
+        <activity android:name=".Tumbes" />
+        <activity android:name=".Piura" />
+        <activity android:name=".Lambayeque" />
+        <activity android:name=".Libertad" />
+        <activity android:name=".Plato" />
+        <activity android:name=".Cajamarca" />
+        <activity android:name=".Huanuco" />
+        <activity android:name=".Pasco" />
+        <activity android:name=".Junin" />
+        <activity android:name=".Amazonas" />
+        <activity android:name=".Loreto" />
+        <activity android:name=".SanMartin" />
+        <activity android:name=".Ucayali" />
+        <activity android:name=".MadreDios" />
+    </application>
+
+</manifest>

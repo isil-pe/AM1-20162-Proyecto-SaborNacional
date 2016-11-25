@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@drawable/fondo_row">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:id="@+id/tviName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Ejemplo"
+            android:textColor="@color/blanco"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="10dp"/>
+
+        <RatingBar
+            android:id="@+id/rtgStar"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:rating="3.5"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iviPlato"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:src="@drawable/chicharron_de_pescado"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" />
+
+</RelativeLayout>
