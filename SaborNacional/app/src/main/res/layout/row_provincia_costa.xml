@@ -18,7 +18,7 @@
         android:textSize="20sp"
         android:textStyle="bold"
         android:text="Lima"
-        android:textColor="@color/finFondo"
+        android:textColor="@color/favorito"
         android:id="@+id/tvNomProvincia"/>
 
 </RelativeLayout>

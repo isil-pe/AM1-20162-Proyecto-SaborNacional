@@ -28,4 +28,5 @@
     <string name="cerrar_sesion">Logout</string>
     <string name="descripcion">Description:</string>
     <string name="provincia">Province:</string>
+    <string name="me_gusta">Like</string>
 </resources>

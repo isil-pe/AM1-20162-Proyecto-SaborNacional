@@ -21,28 +21,50 @@ public class Tumbes extends Activity {
     private ListView lstPlatosTumbes;
     private PlatoAdapter platoAdapter;
     private ProvinciaEntity provincia;
+    private List<PlatoEntity> data;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.provincia_platos);
         extras();
+        loadData();
         app();
+    }
+
+    private void loadData() {
+
+        PlatoApplication application= (PlatoApplication) getApplication();
+        data= application.getPlatoCostaRepository().getPlatoTumbesList();
+    }
+
+    private void app() {
+        ui();
+        events();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
         populate();
     }
 
-    private void app(){
-
-        lstPlatosTumbes = (ListView) findViewById(R.id.lstPlatos);
-        tviTitulo = (TextView) findViewById(R.id.tviTitulo);
-
-        PlatoCostaRepository platoCostaRepository = new PlatoCostaRepository();
-        List<PlatoEntity> data = platoCostaRepository.getPlatoTumbesList();
-
+    private void populate() {
         platoAdapter = new PlatoAdapter(this,
                 data);
         lstPlatosTumbes.setAdapter(platoAdapter);
+    }
 
+    private void ui() {
+        lstPlatosTumbes = (ListView) findViewById(R.id.lstPlatos);
+        tviTitulo = (TextView) findViewById(R.id.tviTitulo);
+
+        if(provincia == null) return;
+
+        tviTitulo.setText(provincia.getName());
+    }
+
+    private void events() {
         lstPlatosTumbes.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
@@ -60,13 +82,6 @@ public class Tumbes extends Activity {
                 provincia = (ProvinciaEntity) bundle.getSerializable("PROVTUMBES");
             }
         }
-    }
-
-    private void populate() {
-
-        if(provincia == null) return;
-
-        tviTitulo.setText(provincia.getName());
     }
 
     private void gotoPlato(PlatoEntity plato) {

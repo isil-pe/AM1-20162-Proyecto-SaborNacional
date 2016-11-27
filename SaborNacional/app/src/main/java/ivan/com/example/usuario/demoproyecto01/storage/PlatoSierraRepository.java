@@ -15,6 +15,11 @@ public class PlatoSierraRepository {
 
     public PlatoSierraRepository() {
 
+        mock();
+    }
+
+    public void mock(){
+
         platosCajamarca();
         platosHuanuco();
         platosPasco();
@@ -60,29 +65,29 @@ public class PlatoSierraRepository {
                 " Además lleva humitas dulces, choclos, tamales y más productos. La Huatía es un agradecimiento a la madre tierra, por" +
                 " ello se prepara bajo tierra; aprovechando el calor de las piedras grandes calientes, se cubre con hojas de plátano " +
                 "y debe estar tapado herméticamente. Las carnes son asadas o sazonas con diversas especies, en especial salsa picante" +
-                " o ají panca. El proceso dura alrededor de 45 minutos a una hora.", R.drawable.pachamanca, "Huánuco"));
+                " o ají panca. El proceso dura alrededor de 45 minutos a una hora.", R.drawable.pachamanca, "Huanuco"));
         platoHuanucoList.add(new PlatoEntity(68, "Locro de gallina", 4.0, "El locro de gallina es una sopa caliente y deliciosa. Se sirve" +
                 " con una presa sancochada; además lleva papas amarillas y blancas; asimismo, un aderezo lleno de sabor, a base de ají " +
                 "panca, cebolla, perejil y especies. Es un platillo que representa la mezcla de dos culturas la hispánica y la inca; lo" +
-                " más importante es propio de la región huanuqueña.", R.drawable.locro_gallina, "Huánuco"));
+                " más importante es propio de la región huanuqueña.", R.drawable.locro_gallina, "Huanuco"));
         platoHuanucoList.add(new PlatoEntity(69, "Juane de gallina", 3.5, "El juane de gallina es uno de los platos clásicos de gran " +
                 "parte de la selva peruana; además es la comida típica de las fiestas de San Juan. Semejante a un tamal está preparado" +
                 " a base de gallina, arroz, aceitunas, huevos; la cual se envuelto en una hoja de bijao. También hay juane de yuca con " +
-                "paiche y se sirve con patacones y cecina.", R.drawable.juane_gallina, "Huánuco"));
+                "paiche y se sirve con patacones y cecina.", R.drawable.juane_gallina, "Huanuco"));
         platoHuanucoList.add(new PlatoEntity(70, "Tacacho con cecina", 4.5, "El tacaco con cecina es un platillo sabroso, elaborado con " +
                 "plátano verde asado, cocido o frito, y carne de cerdo seco y ahumado; casi siempre se acompaña con un trozo de cecina. " +
                 "Se acompaña con plátano, chorizo, yucas y especies. En la mayoría de sitios el plátano se asa; sin embargo en Huánuco " +
                 "se prepara en agua. Además el original se preparara con manteca de cerdo. Es un plato tradicional de la selva, en " +
                 "especial de las regiones de San Martín, Madre de Dios, Ucayali y Amazonas. El tacacho forma parte de la comida navideña " +
-                "en algunos departamentos. Se sirve con un buen vaso de aguaje.", R.drawable.tacacho_con_cecina, "Huánuco"));
+                "en algunos departamentos. Se sirve con un buen vaso de aguaje.", R.drawable.tacacho_con_cecina, "Huanuco"));
         platoHuanucoList.add(new PlatoEntity(71, "Inchicapi", 5.0, "El Inchicapi es una sopa tradicional y típica de la selva peruana." +
                 " Se prepara con gallina de corral o chacra, maní molido, yucas, maíz, choclo picado y otros productos más. Se sirve" +
                 " con arroz y lleva hojas de sacha culantro. Es un platillo difícil de preparar, debes tener cierta pericia al elaborarlo, " +
-                "al probarlo seguro repetirá el plato.", R.drawable.inchicapi, "Huánuco"));
+                "al probarlo seguro repetirá el plato.", R.drawable.inchicapi, "Huanuco"));
         platoHuanucoList.add(new PlatoEntity(72, "La Patarashca", 3.0, "La Patarashca es un plato tradicional de la selva peruana y parte de " +
                 "la sierra también. Al inicio se elabora el pescado se manera sencilla, se envuelve en una hoja de bijao y se prepara " +
                 "a la parrilla o al horno. Se le agrega ajos, pimienta, cebolla, ají y otros productos más. Se acompaña con chicha de " +
-                "jora o aguaje.", R.drawable.patarashca, "Huánuco"));
+                "jora o aguaje.", R.drawable.patarashca, "Huanuco"));
     }
 
     private void platosPasco(){
@@ -167,4 +172,76 @@ public class PlatoSierraRepository {
     public List<PlatoEntity> getPlatoHuanucoList() { return platoHuanucoList; }
     public List<PlatoEntity> getPlatoPascoList() {return platoPascoList; }
     public List<PlatoEntity> getPlatoJuninList() { return platoJuninList; }
+
+    public void updatePlatoCajamarcaById(int platoId, PlatoEntity plato)
+    {
+        int position=-1;
+        PlatoEntity note;
+        for (int i = 0; i <this.platoCajamarcaList.size() ; i++) {
+            note= platoCajamarcaList.get(i);
+            if(note.getId()==platoId)
+            {
+                position=i;
+                break;
+            }
+        }
+        if(position>=0 && position< platoCajamarcaList.size())
+        {
+            this.platoCajamarcaList.set(position, plato);
+        }
+    }
+
+    public void updatePlatoHuanucoById(int platoId, PlatoEntity plato)
+    {
+        int position=-1;
+        PlatoEntity note;
+        for (int i = 0; i <this.platoHuanucoList.size() ; i++) {
+            note= platoHuanucoList.get(i);
+            if(note.getId()==platoId)
+            {
+                position=i;
+                break;
+            }
+        }
+        if(position>=0 && position< platoHuanucoList.size())
+        {
+            this.platoHuanucoList.set(position, plato);
+        }
+    }
+
+    public void updatePlatoPascoById(int platoId, PlatoEntity plato)
+    {
+        int position=-1;
+        PlatoEntity note;
+        for (int i = 0; i <this.platoPascoList.size() ; i++) {
+            note= platoPascoList.get(i);
+            if(note.getId()==platoId)
+            {
+                position=i;
+                break;
+            }
+        }
+        if(position>=0 && position< platoPascoList.size())
+        {
+            this.platoPascoList.set(position, plato);
+        }
+    }
+
+    public void updatePlatoJuninById(int platoId, PlatoEntity plato)
+    {
+        int position=-1;
+        PlatoEntity note;
+        for (int i = 0; i <this.platoJuninList.size() ; i++) {
+            note= platoJuninList.get(i);
+            if(note.getId()==platoId)
+            {
+                position=i;
+                break;
+            }
+        }
+        if(position>=0 && position< platoJuninList.size())
+        {
+            this.platoJuninList.set(position, plato);
+        }
+    }
 }
