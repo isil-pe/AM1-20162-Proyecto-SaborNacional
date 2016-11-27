@@ -52,12 +52,19 @@ public class PlatoAdapter extends BaseAdapter {
         TextView tvNombre =(TextView)view.findViewById(R.id.tviName);
         ImageView imgPlato = (ImageView)view.findViewById(R.id.iviPlato);
         RatingBar rtgStar = (RatingBar)view.findViewById(R.id.rtgStar);
+        ImageView iviFavorite = (ImageView)view.findViewById(R.id.iviFavorite);
 
         final PlatoEntity platoEntity = data.get(position);
 
         tvNombre.setText(platoEntity.getName());
         imgPlato.setImageResource(platoEntity.getImage());
         rtgStar.setRating(platoEntity.getRating().floatValue());
+        boolean favorite = platoEntity.isFavorite();
+        if(favorite == true){
+            iviFavorite.setVisibility(View.VISIBLE);
+        }else{
+            iviFavorite.setVisibility(View.GONE);
+        }
 
         return view;
     }

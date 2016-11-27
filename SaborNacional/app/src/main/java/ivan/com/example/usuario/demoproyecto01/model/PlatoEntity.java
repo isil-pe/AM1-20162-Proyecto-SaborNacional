@@ -10,6 +10,7 @@ public class PlatoEntity implements Serializable{
     private String desc;
     private int image;
     private String provincia;
+    private boolean favorite;
 
     public PlatoEntity() {
     }
@@ -21,6 +22,16 @@ public class PlatoEntity implements Serializable{
         this.desc = desc;
         this.image = image;
         this.provincia = provincia;
+    }
+
+    public PlatoEntity(int id, String name, Double rating, String desc, int image, String provincia, boolean favorite) {
+        this.id = id;
+        this.name = name;
+        this.rating = rating;
+        this.desc = desc;
+        this.image = image;
+        this.provincia = provincia;
+        this.favorite = favorite;
     }
 
     public int getId() {
@@ -69,5 +80,13 @@ public class PlatoEntity implements Serializable{
 
     public void setProvincia(String provincia) {
         this.provincia = provincia;
+    }
+
+    public boolean isFavorite() {
+        return favorite;
+    }
+
+    public void setFavorite(boolean favorite) {
+        this.favorite = favorite;
     }
 }

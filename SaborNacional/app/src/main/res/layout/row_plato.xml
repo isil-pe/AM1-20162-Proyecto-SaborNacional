@@ -30,6 +30,14 @@
             android:numStars="5"
             android:rating="3.5"/>
 
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/favorite"
+            android:id="@+id/iviFavorite"
+            android:visibility="gone"
+            android:layout_marginTop="10dp"/>
+
     </LinearLayout>
 
     <ImageView
