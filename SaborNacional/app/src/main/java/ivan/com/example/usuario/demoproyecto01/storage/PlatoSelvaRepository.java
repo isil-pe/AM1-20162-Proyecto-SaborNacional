@@ -13,8 +13,15 @@ public class PlatoSelvaRepository {
     public List<PlatoEntity> platoLoretoList;
     public List<PlatoEntity> platoUcayaliList;
     public List<PlatoEntity> platoMadreDiosList;
+    public List<PlatoEntity> platoList;
 
     public PlatoSelvaRepository() {
+
+        platoList = new ArrayList<>();
+        mock();
+    }
+
+    public void mock(){
 
         platosAmazonas();
         platosSanMartin();
@@ -222,4 +229,41 @@ public class PlatoSelvaRepository {
     public List<PlatoEntity> getPlatoLoretoList() {return platoLoretoList; }
     public List<PlatoEntity> getPlatoUcayaliList() { return platoUcayaliList; }
     public List<PlatoEntity> getPlatoMadreDiosList() { return platoMadreDiosList; }
+
+    public void updatePlatoSelvaById(int platoId, PlatoEntity platoEntity)
+    {
+        int position=-1;
+        PlatoEntity plato;
+
+        switch (platoEntity.getProvincia()) {
+
+            case "Amazonas":
+                platoList = platoAmazonasList;
+                break;
+            case "San Martin":
+                platoList = platoSanMartinList;
+                break;
+            case "Loreto":
+                platoList = platoLoretoList;
+                break;
+            case "Ucayali":
+                platoList = platoUcayaliList;
+                break;
+            case "Madre de Dios":
+                platoList = platoMadreDiosList;
+                break;
+        }
+        for (int i = 0; i <this.platoList.size() ; i++) {
+            plato= platoList.get(i);
+            if(plato.getId()==platoId)
+            {
+                position=i;
+                break;
+            }
+        }
+        if(position>=0 && position< platoList.size())
+        {
+            this.platoList.set(position, platoEntity);
+        }
+    }
 }

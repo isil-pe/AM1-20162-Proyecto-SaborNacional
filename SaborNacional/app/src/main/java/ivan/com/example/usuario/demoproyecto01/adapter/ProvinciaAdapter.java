@@ -43,7 +43,7 @@ public class ProvinciaAdapter extends BaseAdapter {
         View view;
         if (convertView == null) {
             view = LayoutInflater.from(this.context).
-                    inflate(R.layout.row_provincia_costa,parent,false);
+                    inflate(R.layout.row_provincia,parent,false);
         } else {
             view = convertView;
         }

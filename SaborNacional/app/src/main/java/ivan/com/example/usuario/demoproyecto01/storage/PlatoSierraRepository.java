@@ -12,13 +12,24 @@ public class PlatoSierraRepository {
     public List<PlatoEntity> platoHuanucoList;
     public List<PlatoEntity> platoPascoList;
     public List<PlatoEntity> platoJuninList;
+    public List<PlatoEntity> platoHuancavelicaList;
+    public List<PlatoEntity> platoAyacuchoList;
+    public List<PlatoEntity> platoList;
 
     public PlatoSierraRepository() {
+
+        platoList = new ArrayList<>();
+        mock();
+    }
+
+    public void mock(){
 
         platosCajamarca();
         platosHuanuco();
         platosPasco();
         platosJunin();
+        platosHuancavelica();
+        platosAyacucho();
     }
 
     private void platosCajamarca(){
@@ -60,29 +71,29 @@ public class PlatoSierraRepository {
                 " Además lleva humitas dulces, choclos, tamales y más productos. La Huatía es un agradecimiento a la madre tierra, por" +
                 " ello se prepara bajo tierra; aprovechando el calor de las piedras grandes calientes, se cubre con hojas de plátano " +
                 "y debe estar tapado herméticamente. Las carnes son asadas o sazonas con diversas especies, en especial salsa picante" +
-                " o ají panca. El proceso dura alrededor de 45 minutos a una hora.", R.drawable.pachamanca, "Huánuco"));
+                " o ají panca. El proceso dura alrededor de 45 minutos a una hora.", R.drawable.pachamanca, "Huanuco"));
         platoHuanucoList.add(new PlatoEntity(68, "Locro de gallina", 4.0, "El locro de gallina es una sopa caliente y deliciosa. Se sirve" +
                 " con una presa sancochada; además lleva papas amarillas y blancas; asimismo, un aderezo lleno de sabor, a base de ají " +
                 "panca, cebolla, perejil y especies. Es un platillo que representa la mezcla de dos culturas la hispánica y la inca; lo" +
-                " más importante es propio de la región huanuqueña.", R.drawable.locro_gallina, "Huánuco"));
+                " más importante es propio de la región huanuqueña.", R.drawable.locro_gallina, "Huanuco"));
         platoHuanucoList.add(new PlatoEntity(69, "Juane de gallina", 3.5, "El juane de gallina es uno de los platos clásicos de gran " +
                 "parte de la selva peruana; además es la comida típica de las fiestas de San Juan. Semejante a un tamal está preparado" +
                 " a base de gallina, arroz, aceitunas, huevos; la cual se envuelto en una hoja de bijao. También hay juane de yuca con " +
-                "paiche y se sirve con patacones y cecina.", R.drawable.juane_gallina, "Huánuco"));
+                "paiche y se sirve con patacones y cecina.", R.drawable.juane_gallina, "Huanuco"));
         platoHuanucoList.add(new PlatoEntity(70, "Tacacho con cecina", 4.5, "El tacaco con cecina es un platillo sabroso, elaborado con " +
                 "plátano verde asado, cocido o frito, y carne de cerdo seco y ahumado; casi siempre se acompaña con un trozo de cecina. " +
                 "Se acompaña con plátano, chorizo, yucas y especies. En la mayoría de sitios el plátano se asa; sin embargo en Huánuco " +
                 "se prepara en agua. Además el original se preparara con manteca de cerdo. Es un plato tradicional de la selva, en " +
                 "especial de las regiones de San Martín, Madre de Dios, Ucayali y Amazonas. El tacacho forma parte de la comida navideña " +
-                "en algunos departamentos. Se sirve con un buen vaso de aguaje.", R.drawable.tacacho_con_cecina, "Huánuco"));
+                "en algunos departamentos. Se sirve con un buen vaso de aguaje.", R.drawable.tacacho_con_cecina, "Huanuco"));
         platoHuanucoList.add(new PlatoEntity(71, "Inchicapi", 5.0, "El Inchicapi es una sopa tradicional y típica de la selva peruana." +
                 " Se prepara con gallina de corral o chacra, maní molido, yucas, maíz, choclo picado y otros productos más. Se sirve" +
                 " con arroz y lleva hojas de sacha culantro. Es un platillo difícil de preparar, debes tener cierta pericia al elaborarlo, " +
-                "al probarlo seguro repetirá el plato.", R.drawable.inchicapi, "Huánuco"));
+                "al probarlo seguro repetirá el plato.", R.drawable.inchicapi, "Huanuco"));
         platoHuanucoList.add(new PlatoEntity(72, "La Patarashca", 3.0, "La Patarashca es un plato tradicional de la selva peruana y parte de " +
                 "la sierra también. Al inicio se elabora el pescado se manera sencilla, se envuelve en una hoja de bijao y se prepara " +
                 "a la parrilla o al horno. Se le agrega ajos, pimienta, cebolla, ají y otros productos más. Se acompaña con chicha de " +
-                "jora o aguaje.", R.drawable.patarashca, "Huánuco"));
+                "jora o aguaje.", R.drawable.patarashca, "Huanuco"));
     }
 
     private void platosPasco(){
@@ -161,10 +172,117 @@ public class PlatoSierraRepository {
                 "las sopas más representativas de su región.", R.drawable.patasca, "Junin"));
     }
 
+    private void platosHuancavelica(){
+
+        platoHuancavelicaList = new ArrayList<>();
+        platoHuancavelicaList.add(new PlatoEntity(85, "Sopa de mote", 3.5, "Es un platillo que se disfruta en las fiestas y celebraciones de la " +
+                "región; para la gente del pueblo es conocido como levanta muertos. Contiene como base maíz pelado o mote, pecho de " +
+                "res, cabeza, pecho y panza de carnero, patas de vaca. La cual hierve toda la noche antes de la fiesta. Al preparar " +
+                "la sopa, debe ser aderezada con ají panca, cebolla colorada, ajo y pimienta. Se sirve con ají, rocoto, perejil y " +
+                "otros aderezos.", R.drawable.sopa_de_mote, "Huancavelica"));
+        platoHuancavelicaList.add(new PlatoEntity(86, "Tiqi", 5.0, "plato típico de las zonas cálidas de Huancavelica, preparado " +
+                "con abundante quesillo, papas sancochadas picadas, leche, mezclado con yerbas aromáticas de la zona y ají. Pero " +
+                "además tienen otros ricos potajes preparados con carne de alpaca considerada en el mundo como una de las carnes " +
+                "con menos grasa y colesterol.", R.drawable.tiqi, "Huancavelica"));
+        platoHuancavelicaList.add(new PlatoEntity(87, "Carnero al palo", 3.0, "Es un platillo que nace de la fusión española y andina. " +
+                "El carnero al palo es preparado con un aderezo especial atravesado en un palo y después cocido al carbón. Usualmente " +
+                "se unta con limón el pellejo del carnero, lo expone al sol, se echa ajos, ají panca, comino, sal, pimienta y chicha de " +
+                "jora. Se acompaña con papas, habas, ocas y verduras. Además es un plato típico de la selva central.",
+                R.drawable.carnero_al_palo, "Huancavelica"));
+        platoHuancavelicaList.add(new PlatoEntity(88, "Puchero", 4.5, "El puchero o timpu (hervido)es un plato andino, elaborado con " +
+                "charqui (carne seca de alpaca), res, carnero, menestras frescas, frejoles, chuño (papa deshidratada), choclos, zanahoria, " +
+                "yuca, camotes y verduras. Se pone a hervir un pecho de res o cordero y el resto de ingredientes. Actualmente se prepara " +
+                "de diversas maneras. Es un potaje popular de la sierra, lo puede disfrutar en la época de carnaval. Los platillos varían " +
+                "según la región Arequipa, Cusco, Puno, Ayacucho y otras regiones.", R.drawable.puchero, "Huancavelica"));
+        platoHuancavelicaList.add(new PlatoEntity(89, "Picante de cuy", 3.5, "Es un platillo sumamente nutritivo. El cuy debe estar " +
+                "aderezado al punto con aceite, dientes de ajo, pimienta sal, ají panca molido y comino al gusto. Se le agrega papas, " +
+                "huevo, aceituna, lechuga, cebollas, sal, comino, entre otros. Cada región tiene su estilo, sea en Cajamarca, Junín, " +
+                "Cusco, Apurímac. Incluso se utiliza su aderezo con otras carnes, por ejemplo, con el pollo.",
+                R.drawable.picante_de_cuy, "Huancavelica"));
+        platoHuancavelicaList.add(new PlatoEntity(90, "Patachi", 4.0, "Es un plato preparado con variadas carnes (res, cerdo, cordero, " +
+                "tocino). Además lleva trigo pelado, maíz molido, frijoles, habas, arvejas, chuño, papas y otros ingredientes más. " +
+                "La preparación dura varias horas. ", R.drawable.patachi, "Huancavelica"));
+    }
+
+    private void platosAyacucho(){
+
+        platoAyacuchoList = new ArrayList<>();
+        platoAyacuchoList.add(new PlatoEntity(91, "Puca Picante", 4.0, "Es un platillo originario de la región ayacuchana, a base " +
+                "de chicharrón de patitas de chancho o cordero muy picante, de allí deviene su nombre. Puca es una palabra quechua " +
+                "que significa rojo, precisamente por el ají y el color de la comida. Es un plato delicioso, colorido, algo condimentado, " +
+                "el cual muchas ciudades de la sierra peruana preparan a su estilo regional.", R.drawable.puca_picante, "Ayacucho"));
+        platoAyacuchoList.add(new PlatoEntity(92, "Qapchi", 5.0, "Es un platillo que tiene como ingrediente básico el requesón o " +
+                "quesillo andino desmenuzado; asimismo lleva ají rocoto, cebolla china (opcional), huacatay, y leche. Su acompañante " +
+                "obligado es la papa, la cual puede ser cualquier variedad del tubérculo; por si se encuentra fuera del país y lo " +
+                "desea preparar. Es un delicioso acompañante para algunos platos regionales sureños como el rocoto relleno y muchos " +
+                "más. Es una entrada muy consumida en la región ayacuchana.", R.drawable.qapchi, "Ayacucho"));
+        platoAyacuchoList.add(new PlatoEntity(93, "Adobo ayacuchano", 4.5, "Es un plato de la sierra sur del Perú. Se elabora a base " +
+                "de chancho. Es un platillo fuerte que utiliza ingredientes diversos como ají panca, sal, orégano, pimienta, carne de " +
+                "chancho, chicha de jora , ají panca colorado, cebolla y habitualmente se sirve con camote (también se le conoce como " +
+                "papa dulce) y arroz. Es un plato lleno de sabor  y se acompaña con  chicha morada . Es propio de Ayacucho y se prepara " +
+                "otra versión en la región de Arequipa.", R.drawable.adobo_ayacuchano, "Ayacucho"));
+        platoAyacuchoList.add(new PlatoEntity(94, "Picante de quinua", 3.5, "Uno de los platos más nutritivos de la región ayacuchana. " +
+                "Es una comida a base de quinua , carne de cerdo, ajo molido, leche evaporada, queso fresco, culantro y otros ingredientes " +
+                "más. Es un plato propio de las regiones del sur peruano. ", R.drawable.picante_de_quinua, "Ayacucho"));
+        platoAyacuchoList.add(new PlatoEntity(95, "Humitas", 3.0, "Es una de las entradas emblemáticas del Perú . Es un platillo preparado " +
+                "una base de choclo o maíz andino. La palabra humita procede de la palabra quechua huminta que significa pasta dulce " +
+                "hecha de harina de maíz aderezada con pasas, la cual se envuelve en una panca u hoja seca de maíz y se amarra " +
+                "completamente. Este plato  se sirve usualmente en la Pachamancas o huatías o en las Fiestas Patronales o regionales " +
+                "de la sierra peruana; en especial en Cajamarca, Junín, Arequipa y otras más.", R.drawable.humitas, "Ayacucho"));
+        platoAyacuchoList.add(new PlatoEntity(96, "Patasca", 4.0, "Patasca, sopa de mondongo o sopa de mote según rubro la región. " +
+                "Es un platillo sustancioso que viene de la palabra quechua phatasqa , significa reventado que se traduce en grano " +
+                "de maíz reventado al cocer. Se prepara sobre la base de un caldo de carne de carnero o vaca (según los gustos), " +
+                "cada lugar tiene su forma de elaborarlo. Se prepara en la costa sur peruana, Junín , Huancavelica , Apurímac, Moquegua, " +
+                "en algunas provincias limeñas y otras más . En época de frío se consume mucho porque es nutritiva, reconfortante y " +
+                "poderosa.", R.drawable.patasca, "Ayacucho"));
+    }
+
     public List<PlatoEntity> getPlatoCajamarcaList() {
         return platoCajamarcaList;
     }
     public List<PlatoEntity> getPlatoHuanucoList() { return platoHuanucoList; }
     public List<PlatoEntity> getPlatoPascoList() {return platoPascoList; }
     public List<PlatoEntity> getPlatoJuninList() { return platoJuninList; }
+    public List<PlatoEntity> getPlatoHuancavelicaList() {return platoHuancavelicaList; }
+    public List<PlatoEntity> getPlatoAyacuchoList() { return platoAyacuchoList; }
+
+    public void updatePlatoSierraById(int platoId, PlatoEntity platoEntity)
+    {
+        int position=-1;
+        PlatoEntity plato;
+
+        switch (platoEntity.getProvincia()) {
+
+            case "Cajamarca":
+                platoList = platoCajamarcaList;
+                break;
+            case "Huanuco":
+                platoList = platoHuanucoList;
+                break;
+            case "Pasco":
+                platoList = platoPascoList;
+                break;
+            case "Junin":
+                platoList = platoJuninList;
+                break;
+            case "Huancavelica":
+                platoList = platoHuancavelicaList;
+                break;
+            case "Ayacucho":
+                platoList = platoAyacuchoList;
+                break;
+        }
+        for (int i = 0; i <this.platoList.size() ; i++) {
+            plato= platoList.get(i);
+            if(plato.getId()==platoId)
+            {
+                position=i;
+                break;
+            }
+        }
+        if(position>=0 && position< platoList.size())
+        {
+            this.platoList.set(position, platoEntity);
+        }
+    }
 }

@@ -21,7 +21,7 @@ public class LoginActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_login);
         app();
     }
 
@@ -94,7 +94,7 @@ public class LoginActivity extends Activity {
     private void gotoHome() {
 
         String datoNombre = etNombre.getText().toString();
-        Intent intent = new Intent(LoginActivity.this, Home.class);
+        Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
         intent.putExtra("NOMBRE", datoNombre);
         startActivity(intent);
     }

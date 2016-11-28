@@ -10,4 +10,5 @@
     <color name="verde_focus">#126e0d</color>
     <color name="negro">#000000</color>
     <color name="rojo">#FF0000</color>
+    <color name="favorito">#FFFF8C00</color>
 </resources>

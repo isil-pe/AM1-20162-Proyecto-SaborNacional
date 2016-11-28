@@ -1,7 +1,6 @@
 package ivan.com.example.usuario.demoproyecto01.adapter;
 
 import android.content.Context;
-import android.media.Rating;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
