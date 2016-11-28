@@ -18,10 +18,7 @@ public class PlatoCostaRepository {
 
     public PlatoCostaRepository(){
 
-<<<<<<< HEAD
         platoList = new ArrayList<>();
-=======
->>>>>>> 0944554e40ad5eaec55754c826ade1814889eabb
         mock();
     }
 
@@ -228,13 +225,11 @@ public class PlatoCostaRepository {
     public List<PlatoEntity> getPlatoPiuraList() { return platoPiuraList; }
     public List<PlatoEntity> getPlatoLambayequeList() {return platoLambayequeList; }
     public List<PlatoEntity> getPlatoLaLibertadList() { return platoLaLibertadList; }
-<<<<<<< HEAD
     public List<PlatoEntity> getPlatoAncashList() { return platoAncashList; }
     public List<PlatoEntity> getPlatoLimaList() { return platoLimaList; }
 
-    public void updatePlatoCostaById(int platoId, PlatoEntity platoEntity)
-    {
-        int position=-1;
+    public void updatePlatoCostaById(int platoId, PlatoEntity platoEntity) {
+        int position = -1;
         PlatoEntity plato;
 
         switch (platoEntity.getProvincia()) {
@@ -258,111 +253,15 @@ public class PlatoCostaRepository {
                 platoList = platoLimaList;
                 break;
         }
-        for (int i = 0; i <this.platoList.size() ; i++) {
-            plato= platoList.get(i);
-            if(plato.getId()==platoId)
-=======
-
-    /*public void removePlatoTumbes(PlatoEntity plato)
-    {
-        this.platoTumbesList.remove(plato);
-    }
-
-    public void removePlatoTumbesById(int platoId)
-    {
-        int position=-1;
-        PlatoEntity note;
-        for (int i = 0; i <this.platoTumbesList.size() ; i++)
-        {
-            note = platoTumbesList.get(i);
-            if(note.getId()==platoId)
-            {
-                position=i;
+        for (int i = 0; i < this.platoList.size(); i++) {
+            plato = platoList.get(i);
+            if (plato.getId() == platoId) {
+                position = i;
                 break;
             }
         }
-        if(position>=0 && position< platoTumbesList.size())
-        {
-            this.platoTumbesList.remove(position);
-        }
-    }*/
-
-    public void updatePlatoTumbesById(int platoId, PlatoEntity plato)
-    {
-        int position=-1;
-        PlatoEntity note;
-        for (int i = 0; i <this.platoTumbesList.size() ; i++) {
-            note= platoTumbesList.get(i);
-            if(note.getId()==platoId)
-            {
-                position=i;
-                break;
-            }
-        }
-        if(position>=0 && position< platoTumbesList.size())
-        {
-            this.platoTumbesList.set(position, plato);
-        }
-    }
-
-    public void updatePlatoPiuraById(int platoId, PlatoEntity plato)
-    {
-        int position=-1;
-        PlatoEntity note;
-        for (int i = 0; i <this.platoPiuraList.size() ; i++) {
-            note= platoPiuraList.get(i);
-            if(note.getId()==platoId)
-            {
-                position=i;
-                break;
-            }
-        }
-        if(position>=0 && position< platoPiuraList.size())
-        {
-            this.platoPiuraList.set(position, plato);
-        }
-    }
-
-    public void updatePlatoLambayequeById(int platoId, PlatoEntity plato)
-    {
-        int position=-1;
-        PlatoEntity note;
-        for (int i = 0; i <this.platoLambayequeList.size() ; i++) {
-            note= platoLambayequeList.get(i);
-            if(note.getId()==platoId)
-            {
-                position=i;
-                break;
-            }
-        }
-        if(position>=0 && position< platoLambayequeList.size())
-        {
-            this.platoLambayequeList.set(position, plato);
-        }
-    }
-
-    public void updatePlatoLaLibertadById(int platoId, PlatoEntity plato)
-    {
-        int position=-1;
-        PlatoEntity note;
-        for (int i = 0; i <this.platoLaLibertadList.size() ; i++) {
-            note= platoLaLibertadList.get(i);
-            if(note.getId()==platoId)
->>>>>>> 0944554e40ad5eaec55754c826ade1814889eabb
-            {
-                position=i;
-                break;
-            }
-        }
-<<<<<<< HEAD
-        if(position>=0 && position< platoList.size())
-        {
+        if (position >= 0 && position < platoList.size()) {
             this.platoList.set(position, platoEntity);
-=======
-        if(position>=0 && position< platoLaLibertadList.size())
-        {
-            this.platoLaLibertadList.set(position, plato);
->>>>>>> 0944554e40ad5eaec55754c826ade1814889eabb
         }
     }
 }

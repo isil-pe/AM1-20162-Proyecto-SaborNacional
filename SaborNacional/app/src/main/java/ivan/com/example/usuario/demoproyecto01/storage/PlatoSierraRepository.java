@@ -18,10 +18,7 @@ public class PlatoSierraRepository {
 
     public PlatoSierraRepository() {
 
-<<<<<<< HEAD
         platoList = new ArrayList<>();
-=======
->>>>>>> 0944554e40ad5eaec55754c826ade1814889eabb
         mock();
     }
 
@@ -246,7 +243,6 @@ public class PlatoSierraRepository {
     public List<PlatoEntity> getPlatoHuanucoList() { return platoHuanucoList; }
     public List<PlatoEntity> getPlatoPascoList() {return platoPascoList; }
     public List<PlatoEntity> getPlatoJuninList() { return platoJuninList; }
-<<<<<<< HEAD
     public List<PlatoEntity> getPlatoHuancavelicaList() {return platoHuancavelicaList; }
     public List<PlatoEntity> getPlatoAyacuchoList() { return platoAyacuchoList; }
 
@@ -276,87 +272,15 @@ public class PlatoSierraRepository {
                 platoList = platoAyacuchoList;
                 break;
         }
-        for (int i = 0; i <this.platoList.size() ; i++) {
-            plato= platoList.get(i);
-            if(plato.getId()==platoId)
-=======
-
-    public void updatePlatoCajamarcaById(int platoId, PlatoEntity plato)
-    {
-        int position=-1;
-        PlatoEntity note;
-        for (int i = 0; i <this.platoCajamarcaList.size() ; i++) {
-            note= platoCajamarcaList.get(i);
-            if(note.getId()==platoId)
-            {
-                position=i;
+        for (int i = 0; i < this.platoList.size(); i++) {
+            plato = platoList.get(i);
+            if (plato.getId() == platoId) {
+                position = i;
                 break;
             }
         }
-        if(position>=0 && position< platoCajamarcaList.size())
-        {
-            this.platoCajamarcaList.set(position, plato);
-        }
-    }
-
-    public void updatePlatoHuanucoById(int platoId, PlatoEntity plato)
-    {
-        int position=-1;
-        PlatoEntity note;
-        for (int i = 0; i <this.platoHuanucoList.size() ; i++) {
-            note= platoHuanucoList.get(i);
-            if(note.getId()==platoId)
-            {
-                position=i;
-                break;
-            }
-        }
-        if(position>=0 && position< platoHuanucoList.size())
-        {
-            this.platoHuanucoList.set(position, plato);
-        }
-    }
-
-    public void updatePlatoPascoById(int platoId, PlatoEntity plato)
-    {
-        int position=-1;
-        PlatoEntity note;
-        for (int i = 0; i <this.platoPascoList.size() ; i++) {
-            note= platoPascoList.get(i);
-            if(note.getId()==platoId)
-            {
-                position=i;
-                break;
-            }
-        }
-        if(position>=0 && position< platoPascoList.size())
-        {
-            this.platoPascoList.set(position, plato);
-        }
-    }
-
-    public void updatePlatoJuninById(int platoId, PlatoEntity plato)
-    {
-        int position=-1;
-        PlatoEntity note;
-        for (int i = 0; i <this.platoJuninList.size() ; i++) {
-            note= platoJuninList.get(i);
-            if(note.getId()==platoId)
->>>>>>> 0944554e40ad5eaec55754c826ade1814889eabb
-            {
-                position=i;
-                break;
-            }
-        }
-<<<<<<< HEAD
-        if(position>=0 && position< platoList.size())
-        {
+        if (position >= 0 && position < platoList.size()) {
             this.platoList.set(position, platoEntity);
-=======
-        if(position>=0 && position< platoJuninList.size())
-        {
-            this.platoJuninList.set(position, plato);
->>>>>>> 0944554e40ad5eaec55754c826ade1814889eabb
         }
     }
 }

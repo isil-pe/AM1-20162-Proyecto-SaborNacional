@@ -29,8 +29,5 @@
     <string name="descripcion">Description:</string>
     <string name="provincia">Province:</string>
     <string name="me_gusta">Like</string>
-<<<<<<< HEAD
     <string name="no_gusta">Dislike</string>
-=======
->>>>>>> 0944554e40ad5eaec55754c826ade1814889eabb
 </resources>
