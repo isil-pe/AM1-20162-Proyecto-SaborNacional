@@ -1,5 +1,5 @@
 # AM1-20162-Proyecto-SaborNacional
 
-Integrantes:
+Alumno:
 
 Ivan Fernandez Tazza
