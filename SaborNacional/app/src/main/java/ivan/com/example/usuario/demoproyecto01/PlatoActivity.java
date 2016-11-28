@@ -1,7 +1,11 @@
 package ivan.com.example.usuario.demoproyecto01;
 
 import android.app.Activity;
+<<<<<<< HEAD:SaborNacional/app/src/main/java/ivan/com/example/usuario/demoproyecto01/PlatoActivity.java
 import android.graphics.Color;
+=======
+import android.content.Intent;
+>>>>>>> 0944554e40ad5eaec55754c826ade1814889eabb:SaborNacional/app/src/main/java/ivan/com/example/usuario/demoproyecto01/Plato.java
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -10,6 +14,7 @@ import android.widget.RatingBar;
 import android.widget.TextView;
 
 import ivan.com.example.usuario.demoproyecto01.model.PlatoEntity;
+import ivan.com.example.usuario.demoproyecto01.storage.PlatoCostaRepository;
 
 public class PlatoActivity extends Activity {
 
@@ -44,6 +49,7 @@ public class PlatoActivity extends Activity {
         rtgRating.setRating(plato.getRating().floatValue());
         tviDesPlato.setText(plato.getDesc());
         tviProvincia.setText(plato.getProvincia());
+<<<<<<< HEAD:SaborNacional/app/src/main/java/ivan/com/example/usuario/demoproyecto01/PlatoActivity.java
         if(plato.isFavorite() == true){
             iviFavorite.setVisibility(View.VISIBLE);
             btnFavorite.setText(R.string.no_gusta);
@@ -52,6 +58,10 @@ public class PlatoActivity extends Activity {
         else {
             iviFavorite.setVisibility(View.GONE);
         }
+=======
+        if(plato.isFavorite() == true)
+            iviFavorite.setVisibility(View.VISIBLE);
+>>>>>>> 0944554e40ad5eaec55754c826ade1814889eabb:SaborNacional/app/src/main/java/ivan/com/example/usuario/demoproyecto01/Plato.java
     }
 
     private void ui() {
@@ -72,6 +82,7 @@ public class PlatoActivity extends Activity {
         btnFavorite.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+<<<<<<< HEAD:SaborNacional/app/src/main/java/ivan/com/example/usuario/demoproyecto01/PlatoActivity.java
                 if(plato.isFavorite() == false) {
                     plato.setFavorite(true);
                     iviFavorite.setVisibility(View.VISIBLE);
@@ -88,6 +99,50 @@ public class PlatoActivity extends Activity {
                     updatePlato();
                 }
                 //gotoMain();
+=======
+                plato.setFavorite(true);
+                iviFavorite.setVisibility(View.VISIBLE);
+                if(plato.getProvincia().equals("Tumbes")) {
+                    platoApplication.getPlatoCostaRepository().updatePlatoTumbesById(plato.getId(), plato);
+                }
+                else if (plato.getProvincia().equals("Piura")){
+                    platoApplication.getPlatoCostaRepository().updatePlatoPiuraById(plato.getId(), plato);
+                }
+                else if (plato.getProvincia().equals("Lambayeque")){
+                    platoApplication.getPlatoCostaRepository().updatePlatoLambayequeById(plato.getId(), plato);
+                }
+                else if (plato.getProvincia().equals("La Libertad")){
+                    platoApplication.getPlatoCostaRepository().updatePlatoLaLibertadById(plato.getId(), plato);
+                }
+                else if (plato.getProvincia().equals("Cajamarca")){
+                    platoApplication.getPlatoSierraRepository().updatePlatoCajamarcaById(plato.getId(), plato);
+                }
+                else if (plato.getProvincia().equals("Huanuco")){
+                    platoApplication.getPlatoSierraRepository().updatePlatoHuanucoById(plato.getId(), plato);
+                }
+                else if (plato.getProvincia().equals("Pasco")){
+                    platoApplication.getPlatoSierraRepository().updatePlatoPascoById(plato.getId(), plato);
+                }
+                else if (plato.getProvincia().equals("Junin")){
+                    platoApplication.getPlatoSierraRepository().updatePlatoJuninById(plato.getId(), plato);
+                }
+                else if (plato.getProvincia().equals("Amazonas")){
+                    platoApplication.getPlatoSelvaRepository().updatePlatoAmazonasById(plato.getId(), plato);
+                }
+                else if (plato.getProvincia().equals("San Martin")){
+                    platoApplication.getPlatoSelvaRepository().updatePlatoSanMartinById(plato.getId(), plato);
+                }
+                else if (plato.getProvincia().equals("Loreto")){
+                    platoApplication.getPlatoSelvaRepository().updatePlatoLoretoById(plato.getId(), plato);
+                }
+                else if (plato.getProvincia().equals("Ucayali")){
+                    platoApplication.getPlatoSelvaRepository().updatePlatoUcayaliById(plato.getId(), plato);
+                }
+                else if (plato.getProvincia().equals("Madre de Dios")){
+                    platoApplication.getPlatoSelvaRepository().updatePlatoMadreDiosById(plato.getId(), plato);
+                }
+                gotoMain();
+>>>>>>> 0944554e40ad5eaec55754c826ade1814889eabb:SaborNacional/app/src/main/java/ivan/com/example/usuario/demoproyecto01/Plato.java
             }
         });
 
@@ -100,6 +155,7 @@ public class PlatoActivity extends Activity {
         });*/
     }
 
+<<<<<<< HEAD:SaborNacional/app/src/main/java/ivan/com/example/usuario/demoproyecto01/PlatoActivity.java
     private void updatePlato(){
 
         if(plato.getId() >= 1 && plato.getId() <= 60) {
@@ -118,6 +174,12 @@ public class PlatoActivity extends Activity {
     {
         finish();
     }*/
+=======
+    private void gotoMain()
+    {
+        finish();
+    }
+>>>>>>> 0944554e40ad5eaec55754c826ade1814889eabb:SaborNacional/app/src/main/java/ivan/com/example/usuario/demoproyecto01/Plato.java
 
     private void extras() {
         if (getIntent() != null) {

@@ -17,7 +17,10 @@ public class PlatoSelvaRepository {
 
     public PlatoSelvaRepository() {
 
+<<<<<<< HEAD
         platoList = new ArrayList<>();
+=======
+>>>>>>> 0944554e40ad5eaec55754c826ade1814889eabb
         mock();
     }
 
@@ -230,6 +233,7 @@ public class PlatoSelvaRepository {
     public List<PlatoEntity> getPlatoUcayaliList() { return platoUcayaliList; }
     public List<PlatoEntity> getPlatoMadreDiosList() { return platoMadreDiosList; }
 
+<<<<<<< HEAD
     public void updatePlatoSelvaById(int platoId, PlatoEntity platoEntity)
     {
         int position=-1;
@@ -256,14 +260,101 @@ public class PlatoSelvaRepository {
         for (int i = 0; i <this.platoList.size() ; i++) {
             plato= platoList.get(i);
             if(plato.getId()==platoId)
+=======
+    public void updatePlatoAmazonasById(int platoId, PlatoEntity plato)
+    {
+        int position=-1;
+        PlatoEntity note;
+        for (int i = 0; i <this.platoAmazonasList.size() ; i++) {
+            note= platoAmazonasList.get(i);
+            if(note.getId()==platoId)
             {
                 position=i;
                 break;
             }
         }
+        if(position>=0 && position< platoAmazonasList.size())
+        {
+            this.platoAmazonasList.set(position, plato);
+        }
+    }
+
+    public void updatePlatoSanMartinById(int platoId, PlatoEntity plato)
+    {
+        int position=-1;
+        PlatoEntity note;
+        for (int i = 0; i <this.platoSanMartinList.size() ; i++) {
+            note= platoSanMartinList.get(i);
+            if(note.getId()==platoId)
+            {
+                position=i;
+                break;
+            }
+        }
+        if(position>=0 && position< platoSanMartinList.size())
+        {
+            this.platoSanMartinList.set(position, plato);
+        }
+    }
+
+    public void updatePlatoLoretoById(int platoId, PlatoEntity plato)
+    {
+        int position=-1;
+        PlatoEntity note;
+        for (int i = 0; i <this.platoLoretoList.size() ; i++) {
+            note= platoLoretoList.get(i);
+            if(note.getId()==platoId)
+            {
+                position=i;
+                break;
+            }
+        }
+        if(position>=0 && position< platoLoretoList.size())
+        {
+            this.platoLoretoList.set(position, plato);
+        }
+    }
+
+    public void updatePlatoUcayaliById(int platoId, PlatoEntity plato)
+    {
+        int position=-1;
+        PlatoEntity note;
+        for (int i = 0; i <this.platoUcayaliList.size() ; i++) {
+            note= platoUcayaliList.get(i);
+            if(note.getId()==platoId)
+            {
+                position=i;
+                break;
+            }
+        }
+        if(position>=0 && position< platoUcayaliList.size())
+        {
+            this.platoUcayaliList.set(position, plato);
+        }
+    }
+
+    public void updatePlatoMadreDiosById(int platoId, PlatoEntity plato)
+    {
+        int position=-1;
+        PlatoEntity note;
+        for (int i = 0; i <this.platoMadreDiosList.size() ; i++) {
+            note= platoMadreDiosList.get(i);
+            if(note.getId()==platoId)
+>>>>>>> 0944554e40ad5eaec55754c826ade1814889eabb
+            {
+                position=i;
+                break;
+            }
+        }
+<<<<<<< HEAD
         if(position>=0 && position< platoList.size())
         {
             this.platoList.set(position, platoEntity);
+=======
+        if(position>=0 && position< platoMadreDiosList.size())
+        {
+            this.platoMadreDiosList.set(position, plato);
+>>>>>>> 0944554e40ad5eaec55754c826ade1814889eabb
         }
     }
 }

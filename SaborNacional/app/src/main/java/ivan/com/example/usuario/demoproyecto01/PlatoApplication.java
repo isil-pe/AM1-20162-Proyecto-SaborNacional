@@ -15,7 +15,10 @@ public class PlatoApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+<<<<<<< HEAD
 
+=======
+>>>>>>> 0944554e40ad5eaec55754c826ade1814889eabb
         platoCostaRepository = new PlatoCostaRepository();
         platoCostaRepository.mock();
 
