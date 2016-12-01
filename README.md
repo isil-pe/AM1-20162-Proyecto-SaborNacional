@@ -24,4 +24,6 @@ BASE DE DATOS
 
 DIAGRAMA
 
-- <img src="http://i65.tinypic.com/2q897y1.jpg" />
+<img src="http://i65.tinypic.com/2q897y1.jpg" />
+
+<img src="http://i65.tinypic.com/23jmu5d.jpg" />
