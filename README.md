@@ -1,15 +1,15 @@
 # AM1-20162-Proyecto-SaborNacional
 
-ALUMNO
+*ALUMNO*
 - Ivan Fernandez Tazza
 
-NOMBRE DEL PROYECTO
+*NOMBRE DEL PROYECTO*
 - “Sabor Nacional”
 
-DESCRIPCIÓN DEL PROYECTO
+*DESCRIPCIÓN DEL PROYECTO*
 - Sabor Nacional es una app que te permite buscar los mejores platos típicos del Perú. Lo podrás hacer según la región y provincias elegidas. Si te gusta el plato seleccionado tendrás la opción de guardarlo como favorito, así podrás hacer con todos los que te gusten. 
 
-BASE DE DATOS
+*BASE DE DATOS*
 - TABLAS
 
 | REGION      | PROVINCIA   | PLATO            |
@@ -22,7 +22,7 @@ BASE DE DATOS
 |             |             | String provincia |
 |             |             | boolean favorite |
 
-DIAGRAMA
+*DIAGRAMA*
 
 <img src="https://github.com/isil-pe/AM1-20162-Proyecto-SaborNacional/blob/master/am1_diagrama1.jpg" />
 
