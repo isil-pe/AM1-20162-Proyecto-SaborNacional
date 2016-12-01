@@ -10,7 +10,7 @@ DESCRIPCIÓN DEL PROYECTO
 - Sabor Nacional es una app que te permite buscar los mejores platos típicos del Perú. Lo podrás hacer según la región y provincias elegidas. Si te gusta el plato seleccionado tendrás la opción de guardarlo como favorito, así podrás hacer con todos los que te gusten. 
 
 BASE DE DATOS
-TABLAS
+- TABLAS
 
 | REGION      | PROVINCIA   | PLATO            |
 | :---------- | :---------- | :--------------- |
