@@ -1,13 +1,13 @@
 # AM1-20162-Proyecto-SaborNacional
 
 ## Alumno
-- Ivan Fernandez Tazza
+Ivan Fernandez Tazza
 
 ## Nombre del proyecto 
-- Sabor Nacional
+Sabor Nacional
 
 ## Descripción del proyecto
-- Sabor Nacional es una app que te permite buscar los mejores platos típicos del Perú. Lo podrás hacer según la región y provincias elegidas. Si te gusta el plato seleccionado tendrás la opción de guardarlo como favorito, así podrás hacer con todos los que te gusten. 
+Sabor Nacional es una app que te permite buscar los mejores platos típicos del Perú. Lo podrás hacer según la región y    provincias elegidas. Si te gusta el plato seleccionado tendrás la opción de guardarlo como favorito, así podrás hacer con todos los que te gusten. 
 
 ## Base de Datos
 Tablas
