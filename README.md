@@ -1,7 +1,7 @@
 # AM1-20162-Proyecto-SaborNacional
 
 ## Alumno
-Ivan Fernandez Tazza
+Ivan Fernandez Tazza ivanft_13@hotmail.com
 
 ## Nombre del proyecto 
 Sabor Nacional
