@@ -21,7 +21,3 @@ BASE DE DATOS
 |             |             | int image        |
 |             |             | String provincia |
 |             |             | boolean favorite |
-
-DIAGRAMA
-
-<img src="https://postimg.org/image/wnf42fm03/" />
