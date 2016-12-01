@@ -14,6 +14,10 @@ public class PlatoCostaRepository {
     public List<PlatoEntity> platoLaLibertadList;
     public List<PlatoEntity> platoAncashList;
     public List<PlatoEntity> platoLimaList;
+    public List<PlatoEntity> platoIcaList;
+    public List<PlatoEntity> platoArequipaList;
+    public List<PlatoEntity> platoMoqueguaList;
+    public List<PlatoEntity> platoTacnaList;
     public List<PlatoEntity> platoList;
 
     public PlatoCostaRepository(){
@@ -30,6 +34,10 @@ public class PlatoCostaRepository {
         platosLaLibertad();
         platosAncash();
         platosLima();
+        platosIca();
+        platosArequipa();
+        platosMoquegua();
+        platosTacna();
     }
 
     private void platosTumbes(){
@@ -219,6 +227,143 @@ public class PlatoCostaRepository {
                 "mezclada con ají amarillo.", R.drawable.causa_rellena, "Lima"));
     }
 
+    private void platosIca(){
+
+        platoIcaList = new ArrayList<>();
+
+        platoIcaList.add(new PlatoEntity(37, "Sopa seca", 3.5, "Es una comida típica de la provincia de Chincha. Es un plato está " +
+                "elaborado a base de tallarines y gallina en trozos. aderezado con achiote, perejil, albahaca y diversas especies.  " +
+                "La preparación lleva ají colorado, ajos, cebolla, perejil, albahaca, zanahoria, aceitunas. Asimismo puedes agregarle " +
+                "vino en la preparación. Usualmente acompaña a la carapulcra; la combinación es reconocida por muchos, como mancha " +
+                "pecho.", R.drawable.sopa_seca, "Ica"));
+        platoIcaList.add(new PlatoEntity(38, "Carapulcra", 4.5, "La carapulcra es uno de los clásicos platos peruanos.  Es un plato" +
+                " andino a base de papa seca sancochada y guisada. Además lleva carne de cerdo, gallina, ají panca y mirasol, ajos " +
+                "y maní molido. Se suele servir junto a la sopa seca.  Lo puede acompañar con un vino o una chicha helada. ",
+                R.drawable.carapulcra, "Ica"));
+        platoIcaList.add(new PlatoEntity(39, "Picante de pallares", 5.0, "La sabrosa morusa se prepara a base de puré de papa " +
+                "o yuca con asado de res o cerdo. Casi siempre se acompaña de un delicioso guiso, picante de pallares; el cual " +
+                "lleva leche, huevo y queso fresco. En Ica, los pallares forman parte imprescindible de la comida iqueña, " +
+                "asimismo los pallares de grano largo; los cuales son cocidos en un aderezo con ají amarillo molido y se " +
+                "acompaña con arroz blanco o salsa criolla. Además hay combinaciones a base de pallares y garbanzos.",
+                R.drawable.morusa_de_pallares, "Ica"));
+        platoIcaList.add(new PlatoEntity(40, "Coctel de camarones", 4.0, "Es una receta marina tradicional, se prepara con un kilo " +
+                "de colitas de camarón o langostinos (peladas), cocidas en agua con sal. Además lleva mayonesa, palta, huevo, " +
+                "kétchup y lechuga.  Se adereza las colitas con sal y pimienta. Es realmente delicioso y para muchos es una " +
+                "entrada afrodisiaca.", R.drawable.coctel_de_camarones, "Ica"));
+        platoIcaList.add(new PlatoEntity(41, "Chicha en caldo", 4.5, "Chicha en Caldo es un plato propio de la región ancashina, " +
+                "sea en el distrito de Conchucos y su modo especial de preparación o el platillo del distrito de Huallanca. Además " +
+                "es el plato bandera de la provincia de Pomabamba donde se preparan la chicha en caldo. Es un plato a base de gallina " +
+                "de corral, chicha de jora, chancaca, cebolla china, maní tostado, orégano, ají mirasol, ají panca, aceituna, azúcar y " +
+                "especies.", R.drawable.chicha_en_caldo, "Ica"));
+        platoIcaList.add(new PlatoEntity(42, "Llunca Cashqui", 2.5, "Llunca Cashqui es una sopa típica de Huaraz, en Ancash. Es " +
+                "elaborada a base de trigo, gallina de corral, cebolla china picada, ají panca, apio, zanahoria, perejil, orégano " +
+                "tostado, papa Yungay, aceite de oliva y otros ingredientes más. Se prepara, de preferencia, en una olla de barro. " +
+                "Es un plato suculento que se acostumbraba servir en los entierros para agradecer a las personas que llegaban a " +
+                "despedir al difunto, considerado por algunos huaracinos como un plato ritual en muchos aspectos. En la actualidad " +
+                "lo han reinventado en algunos restaurantes de la región. ", R.drawable.llunca_cashqui, "Ica"));
+    }
+
+    private void platosArequipa(){
+
+        platoArequipaList = new ArrayList<>();
+
+        platoArequipaList.add(new PlatoEntity(43, "Ocopa", 5.0, "La ocopa arequipeña es el plato más reconocido de Arequipa en el Perú " +
+                "y en el extranjero. Se prepara a base de una rama de huacatay, ají mirasol, ají amarillo, maní, galletas de vainilla " +
+                "o pan, leche evaporada, queso fresco, ajo y condimentos. En los pueblos muelen los ingredientes utilizando un batán, " +
+                "en la mayoría de restaurantes utilizan una licuadora. Se sirve acompañado de papas sancochadas, un huevo duro y una " +
+                "aceituna. En su preparación es muy parecido a la papa a la huancaína. Se acompaña con una chicha morada. ",
+                R.drawable.ocopa, "Arequipa"));
+        platoArequipaList.add(new PlatoEntity(44, "Rocoto Relleno", 4.0, "El rocoto relleno es un plato originario de Arequipa y es una de " +
+                "las comidas fundamentales del Perú. Está elaborado a base de rocoto, carne picada, cebolla roja picada, ají panca colorado " +
+                "molido, maní tostado o molido, huevos, queso, leche y otros ingredientes más. En la mayoría de restaurantes arequipeños " +
+                "se sirve acompañado de papa horneada y a veces con puré de papas. Se recomienda que el ají panca sea molido con batán. ",
+                R.drawable.rocoto_relleno, "Arequipa"));
+        platoArequipaList.add(new PlatoEntity(45, "Cauchi", 5.0, "El cauchi es una comida típica arequipeña, propia de la gastronomía de " +
+                "la región. Tiene una variedad de platillos, entre los cuales está el Cauchi de queso y el cauche de camarones. Ambos " +
+                "llevan como base queso fresco serrano, ají amarillo, ají panca molido, huacatay, ajo, cebolla rojas, habas y leche. " +
+                "En algunas recetas arequipeñas le echan tomates en el aderezo. Casi siempre se acompaña de papas hervidas peladas en " +
+                "rodajas.", R.drawable.cauchi, "Arequipa"));
+        platoArequipaList.add(new PlatoEntity(46, "Chaque de tripas", 5.0, "Es uno de los platos tradicionales de Arequipa, se consume " +
+                "habitualmente los lunes. Es una sopa elaborada con tripas, carne de cordero, papas, chuño, zapallo, zanahoria, ají " +
+                "colorado panca, habas, cebolla roja picada, choclos, trigo, ajo, hierbabuena, papas, tomates, col, orégano y " +
+                "condimentos. Hay variaciones según la región.", R.drawable.chaque_tripas, "Arequipa"));
+        platoArequipaList.add(new PlatoEntity(47, "Solterito arequipeño", 3.0, "Es un plato colorido, sabroso y aromático. Se " +
+                "prepara a base de habas, choclos, cebolla picada, rocoto picado, queso fresco, aceitunas picadas, tomate a " +
+                "cuadritos. Las habas debe cocerlas, se añade los otros ingredientes y todo se mezcla con vinagre, una cuchara " +
+                "de perejil picado, sal y pimienta al gusto. Se puede acompañar de una lechuga si lo desea. Es una excelente " +
+                "entrada. ", R.drawable.solterito, "Arequipa"));
+        platoArequipaList.add(new PlatoEntity(48, "Chupe de camarones", 2.5, "El chupe de camarones es una sopa criolla originaria de " +
+                "Arequipa. Es un plato muy nutritivo, potente, sustancioso y delicioso. Está preparado con camarones de río de la costa " +
+                "del sur del Perú. La preparación lleva diversos ingredientes camarones grandes, cebollas, tomates, ají panca, habas, " +
+                "arvejas, papas, choclos, leche evaporada, ajo, cebolla picada, huevos e ingredientes según el lugar. Se sirve " +
+                "acompañado de una salsa de rocoto o con pedazos de pan frito.", R.drawable.chupe_camarones, "Arequipa"));
+    }
+
+    private void platosMoquegua(){
+
+        platoMoqueguaList = new ArrayList<>();
+
+        platoMoqueguaList.add(new PlatoEntity(49, "Cuy frito", 4.0, "El cuy forma parte de la cultura y los rituales andinos; por eso " +
+                "forma parte de la alimentación  y comida peruana. En Moquegua hay dos platillos que sobresalen a base de cuy: el " +
+                "picante y frito. El cuy es sumamente nutritivo y rico en proteínas. El cuy frito o chactado, es un plato realmente sabroso, " +
+                "para prepararlo debes apanarlo con maíz molido y después freírlo en una plancha de fierro. Se acompañada con papas sancochadas, " +
+                "ensalada y cancha.", R.drawable.cuy_frito, "Moquegua"));
+        platoMoqueguaList.add(new PlatoEntity(50, "Chicharron de chancho", 4.5, "El chicharrón de chancho o cerdo es una comida típica " +
+                "del sur peruano, es fácil de preparar y no necesita mucho tiempo de cocción. Se elabora a base de trozos de cerdo, se " +
+                "sirve con camote, papas sancochadas y mote; además puedes agregarle salsa criolla y lechuga.  Es un plato muy sabroso. ",
+                R.drawable.chicharron_de_chancho, "Moquegua"));
+        platoMoqueguaList.add(new PlatoEntity(51, "La Cacharrada", 3.0, "Es un plato que se prepara solamente en Moquegua. La cacharrada " +
+                "está elaborado a base de variadas carnes y papas cocidas, las cuales se elaboran bajo tierra. El plato lleva siete " +
+                "carnes distintas, tales como vísceras de res; entre ellas está el chinchuli, anchura, criadilla, venas, hígado, " +
+                "mollejas y corazón. Se fríen y se sazonan con pimienta y comino; se sirve caliente.", R.drawable.cacharrada, "Moquegua"));
+        platoMoqueguaList.add(new PlatoEntity(52, "Parihuela", 3.0, "La Parihuela forma parte de la costa moqueguana, es una sopa que viene desde " +
+                "la época prehispánica. Se elabora a base de ají colorado, tomate, cebolla, ají panca, rocoto, ajo, especies y diversos " +
+                "mariscos como conchas, langostinos, choros, caracol, almejas, limón y chilcano (es un caldo a base de pescado).",
+                R.drawable.parihuela, "Moquegua"));
+        platoMoqueguaList.add(new PlatoEntity(53, "Ceviche mixto", 2.5, "El ceviche es uno de los platos fundamentales del país y se " +
+                "prepara a lo largo de la costa peruana. Es considerado Patrimonio Cultural de la Nación. Es una comida que viene " +
+                "desde la época precolombina, es una mixtura de sabores. Hay gran variedad de ceviches y mariscos. Se prepara a base " +
+                "de pescado o mariscos, los cuales se aderezan con zumo de  limón, rocoto, cebolla, papa, camote, choclo y lechuga. " +
+                "Se acompaña con cancha serrana. Para tomar pide una chicha morada heladita.", R.drawable.ceviche_mixto, "Moquegua"));
+        platoMoqueguaList.add(new PlatoEntity(54, "Moqueguano de camarón", 5.0, "El moqueguano de camarón o chupe de camarones de " +
+                "Moquegua, es un plato clásico de la mayoría de regiones de la costa peruana. Es un platillo a base camarones, los " +
+                "cuales se extraen del río Moquegua o río Tambo en Omate. ", R.drawable.moqueguano_camaron, "Moquegua"));
+    }
+
+    private void platosTacna(){
+
+        platoTacnaList = new ArrayList<>();
+
+        platoTacnaList.add(new PlatoEntity(55, "Picante a la tacnena", 2.5, "Es el plato bandera de la comida tacneña. Para elaborar " +
+                "el picante a la tacneña, hay que tener en cuenta los productos autóctonos de la región. Lleva ingredientes tal " +
+                "como, charqui, patas de carnero, mondongo, pata de res, ají panca, papas, orégano, ajo, cebolla y otros más. Es una comida " +
+                "mus sustanciosa y se sirve acompañado de pan marraqueta o con arroz. Se acostumbra acompañar con el vino de chacra de Tacna. ",
+                R.drawable.picante_a_la_tacnena, "Tacna"));
+        platoTacnaList.add(new PlatoEntity(56, "Cazuela de gallina", 5.0, "Es un plato típico, sencillo y sabroso, en especial para " +
+                "el invierno. Se puede preparar con diversos tipos de carne, no obstante en la región se prepara con gallina criolla. " +
+                "Lleva zapallo, choclo, arvejas, zanahorias, papas, ajo, sal, perejil (opcional), apio y arroz. Se sanchocha el ave en agua y " +
+                "sal, se agrega parte de los ingredientes y se deja cocer por unos cinco minutos y se agrega el resto. Se sirve con perjil si " +
+                "lo desea. ", R.drawable.cazuela_de_ave, "Tacna"));
+        platoTacnaList.add(new PlatoEntity(57, "Chicharrón de chancho", 4.5, "Es un plato muy rico y jugoso. Consiste en trozos de carne de chacho o puerco " +
+                "con piel que se cocina con su misma grasa y agua, se prepara sólo con sal. Se sirve con camotes fritos o papas sancochadas y cancha serrana y " +
+                "salsa criolla. Para preparar la salsa criolla, se debe cortar la cebolla roja en juliana, se macera con sal, pimienta, " +
+                "rocoto picado muy fino y limón. ", R.drawable.chicharron_de_chancho, "Tacna"));
+        platoTacnaList.add(new PlatoEntity(58, "Cordero a la parrilla", 3.0, "Es un platillo nutritivo, delicioso y lleno de sabor. Lleva cordero, choclo, " +
+                "lechuga, tomates, ajos molidos, ají panca molido, vino o vinagre, sal y romero. Se troza el cordero en varias partes y " +
+                "se aliñan con todos los ingredientes por varias horas. Se pone a la parrilla, se asa durante una hora. Luego se va " +
+                "esparciendo aceite cada cierto tiempo, hasta que se encuentre completamente asado. Se sirve con choclos, papas " +
+                "sancochadas, arroz (opcional) y salsa criolla. Si deseas puedes acompañar el plato con una tradicional chicha morada " +
+                "heladita. ", R.drawable.cordero_a_la_parrilla, "Tacna"));
+        platoTacnaList.add(new PlatoEntity(59, "Choclo con queso", 4.0, "Uno de los platos más sencillos y ricos. Se prepara con choclos tiernos y de grano " +
+                "blando. Luego los pones a hervir en una olla con agua, agregas anís al gusto, azúcar morena (al gusto) una pizca de limón. Cuando está cocido " +
+                "lo sirves con queso paria o queso fresco andino y lo acompañas de salsa criolla y lechuga.", R.drawable.choclo_con_queso, "Tacna"));
+        platoTacnaList.add(new PlatoEntity(60, "Chupe de camarones", 2.5, "El chupe de camarones es una sopa criolla originaria de " +
+                "Arequipa. Es un plato muy nutritivo, potente, sustancioso y delicioso. Está preparado con camarones de río de la costa " +
+                "del sur del Perú. La preparación lleva diversos ingredientes camarones grandes, cebollas, tomates, ají panca, habas, " +
+                "arvejas, papas, choclos, leche evaporada, ajo, cebolla picada, huevos e ingredientes según el lugar. Se sirve " +
+                "acompañado de una salsa de rocoto o con pedazos de pan frito.", R.drawable.chupe_camarones, "Tacna"));
+    }
+
     public List<PlatoEntity> getPlatoTumbesList() {
         return platoTumbesList;
     }
@@ -227,6 +372,10 @@ public class PlatoCostaRepository {
     public List<PlatoEntity> getPlatoLaLibertadList() { return platoLaLibertadList; }
     public List<PlatoEntity> getPlatoAncashList() { return platoAncashList; }
     public List<PlatoEntity> getPlatoLimaList() { return platoLimaList; }
+    public List<PlatoEntity> getPlatoIcaList() { return platoIcaList; }
+    public List<PlatoEntity> getPlatoArequipaList() { return platoArequipaList; }
+    public List<PlatoEntity> getPlatoMoqueguaList() { return platoMoqueguaList; }
+    public List<PlatoEntity> getPlatoTacnaList() { return platoTacnaList; }
 
     public void updatePlatoCostaById(int platoId, PlatoEntity platoEntity) {
         int position = -1;
@@ -251,6 +400,18 @@ public class PlatoCostaRepository {
                 break;
             case "Lima":
                 platoList = platoLimaList;
+                break;
+            case "Ica":
+                platoList = platoIcaList;
+                break;
+            case "Arequipa":
+                platoList = platoArequipaList;
+                break;
+            case "Moquegua":
+                platoList = platoMoqueguaList;
+                break;
+            case "Tacna":
+                platoList = platoTacnaList;
                 break;
         }
         for (int i = 0; i < this.platoList.size(); i++) {

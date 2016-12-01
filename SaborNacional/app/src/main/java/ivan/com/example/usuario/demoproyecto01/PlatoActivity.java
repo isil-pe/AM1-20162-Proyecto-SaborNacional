@@ -54,8 +54,8 @@ public class PlatoActivity extends Activity {
             iviFavorite.setVisibility(View.GONE);
         }
 
-        if(plato.isFavorite() == true)
-            iviFavorite.setVisibility(View.VISIBLE);
+        //if(plato.isFavorite() == true)
+            //iviFavorite.setVisibility(View.VISIBLE);
     }
 
     private void ui() {

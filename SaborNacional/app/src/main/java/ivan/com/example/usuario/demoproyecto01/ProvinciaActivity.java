@@ -53,6 +53,18 @@ public class ProvinciaActivity extends Activity {
             case 6:
                 data= application.getPlatoCostaRepository().getPlatoLimaList();
                 break;
+            case 7:
+                data= application.getPlatoCostaRepository().getPlatoIcaList();
+                break;
+            case 8:
+                data= application.getPlatoCostaRepository().getPlatoArequipaList();
+                break;
+            case 9:
+                data= application.getPlatoCostaRepository().getPlatoMoqueguaList();
+                break;
+            case 10:
+                data= application.getPlatoCostaRepository().getPlatoTacnaList();
+                break;
             case 11:
                 data= application.getPlatoSierraRepository().getPlatoCajamarcaList();
                 break;
@@ -70,6 +82,15 @@ public class ProvinciaActivity extends Activity {
                 break;
             case 16:
                 data= application.getPlatoSierraRepository().getPlatoAyacuchoList();
+                break;
+            case 17:
+                data= application.getPlatoSierraRepository().getPlatoApurimacList();
+                break;
+            case 18:
+                data= application.getPlatoSierraRepository().getPlatoCuzcoList();
+                break;
+            case 19:
+                data= application.getPlatoSierraRepository().getPlatoPunoList();
                 break;
             case 20:
                 data= application.getPlatoSelvaRepository().getPlatoAmazonasList();

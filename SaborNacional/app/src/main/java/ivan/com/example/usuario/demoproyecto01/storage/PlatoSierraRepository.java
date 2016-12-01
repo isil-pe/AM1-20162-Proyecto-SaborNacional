@@ -14,6 +14,9 @@ public class PlatoSierraRepository {
     public List<PlatoEntity> platoJuninList;
     public List<PlatoEntity> platoHuancavelicaList;
     public List<PlatoEntity> platoAyacuchoList;
+    public List<PlatoEntity> platoApurimacList;
+    public List<PlatoEntity> platoCuzcoList;
+    public List<PlatoEntity> platoPunoList;
     public List<PlatoEntity> platoList;
 
     public PlatoSierraRepository() {
@@ -30,6 +33,9 @@ public class PlatoSierraRepository {
         platosJunin();
         platosHuancavelica();
         platosAyacucho();
+        platosApurimac();
+        platosCuzco();
+        platosPuno();
     }
 
     private void platosCajamarca(){
@@ -237,6 +243,115 @@ public class PlatoSierraRepository {
                 "poderosa.", R.drawable.patasca, "Ayacucho"));
     }
 
+    private void platosApurimac(){
+
+        platoApurimacList = new ArrayList<>();
+
+        platoApurimacList.add(new PlatoEntity(97, "Kapchi de chuño", 5.0, "El kapchi o japchi es una salsa que tiene como ingredientes " +
+                "fundamentales quesillo (requesón) desmenuzado y ají (rocoto). A esta base se le puede añadir, según el gusto, diversos " +
+                "ingredientes molidos como huacatay, ajo, palillo y leche.  Se introduce el chuño remojado y picado. El kapchi sirve de " +
+                "acompañante de diversos platos desde papas hervidas, tallarines, estofado de gallina y rocoto relleno.",
+                R.drawable.kapchi, "Apurimac"));
+        platoApurimacList.add(new PlatoEntity(98, "Cancacho", 3.5, "Cordero al palo. El animal tierno es puesto sobre un bastidor al fuego" +
+                " de carbón, sobre el que se asa lentamente. De rato en rato se unta con una salsa hecha en base de aceite, sal, ají, ajo," +
+                " pimienta, limón y optativamente un poco de vino. El plato se acompaña de papas cocidas, ensalada y para beber cerveza o " +
+                "chicha de maíz . En Apurímac a veces se usa lechón.", R.drawable.cancacho, "Apurimac"));
+        platoApurimacList.add(new PlatoEntity(99, "Cuy relleno", 4.5, "Es la forma original de preparar un ingrediente típico de los Andes. " +
+                "Se usa como ingredientes, un cuy tierno, ajos molidos, cebolla, ají panca, huacatay, hierbabuena, sal, pimienta, comino " +
+                "y manteca de chancho para freir.", R.drawable.cuy_relleno, "Apurimac"));
+        platoApurimacList.add(new PlatoEntity(100, "Huatia", 4.5, "Es similar a la Pachamanca se ponen papas frescas sobre piedras " +
+                "calientes acompañadas de hierbas aromáticas. Esta comida es de origen pre hispánico, se solía preparar en plena época " +
+                "de cosecha. Excavando un hueco, se ponen a calentar piedras, sobre als cuales se acomoda un poco de hierba o de las " +
+                "hojas de la misma papa. Después se colocan las papas, que se cubren con otra porción de hierba, de tal forma que " +
+                "aquellas se cocinen en su propio vapor.", R.drawable.huatia, "Apurimac"));
+        platoApurimacList.add(new PlatoEntity(101, "Patasca", 3.5, "La Patasca o sopa de mote es el plato típico de Huancayo. Es un plato" +
+                " sustancioso que debe su nombre a la palabra quechua phatasqa, significa reventado que se traduce en grano de maíz " +
+                "reventado al cocer. Se cuece sobre la plataforma de un sustancioso caldo de cabeza de carnero, mondongo y maíz blanco, " +
+                "mas conocido como mote. Cada departamento tiene ciertas particularidades al preparar el platillo, depende de las " +
+                "diversas carnes o hierbas que se incluyan en la prepración. Una parte de la costa sur del Perú, Huancayo, Tarma, " +
+                "Moquegua y Tacna y algunas provincias de la zona serrana del departamento de Lima, tienen en la Patasca a una de " +
+                "las sopas más representativas de su región.", R.drawable.patasca, "Apurimac"));
+        platoApurimacList.add(new PlatoEntity(102, "Caldo verde", 4.0, "El caldo verde se prepara en parte de la selva o sierra peruana; " +
+                "sin embargo es propio de la ciudad de Cajamarca; sin quitarle el crédito a las regiones que elaboran el platillo a su" +
+                " propio estilo. Tiene como base quesillo, papas, huevos, paico, hierbabuena y perejil. Además se acompaña con cancha" +
+                " serrana.", R.drawable.caldo_verde, "Apurimac"));
+    }
+
+    private void platosCuzco(){
+
+        platoCuzcoList = new ArrayList<>();
+
+        platoCuzcoList.add(new PlatoEntity(103, "Chancho al horno", 4.0, "La carne asada de lechón o cerdo se sirve como piqueo. " +
+                "Se escogen trozos de carne de cerdo con hueso, se lavan, sazonan y se ponen a macerar con sal, pimienta, ají " +
+                "molido, vinagre, cerveza o sillao y ají panca molido. Se deja macerar de 24 a 48 horas. Después se hornea a " +
+                "fuego lento hasta verificar que esté a punto. Se sirve con yucas y mote. Este plato lo podemos encontrar en " +
+                "varios restaurantes de Lima.", R.drawable.chancho_al_horno, "Cuzco"));
+        platoCuzcoList.add(new PlatoEntity(104, "Chuño cola", 2.5, "Delicioso potaje de origen incaico. Es un caldo picante a base " +
+                "de papas, chuño, garbanzos, arroz, carnes diversas. En un litro de de caldo se hierven salchichas serranas, un " +
+                "puñado de arroz, frejoles verdes, y papas peladas cortadas. Cuando todo está cocinado, se agrega harina de chuño " +
+                "disuelta en agua fría. La mezcla se revuelve con un cucharón de palo llamado wisla y se deja cocinar hasta que " +
+                "toma punto. Este plato se come en cualquier época del año.", R.drawable.chuno_cola, "Cuzco"));
+        platoCuzcoList.add(new PlatoEntity(105, "Olluquito con charqui", 4.5, "Este plato es uno de los platos fundamentales de la " +
+                "cocina peruana. Tiene dos ingredientes que son exclusivamente peruanos: olluco, un tipo de papa que crece en los " +
+                "andes y charqui, carne seca de llama o alpaca, los cuales son productos propios del Perú. Es un guiso de ollucos y carne " +
+                "seca picada. Actualmente se sirve con arroz. Se lavan los ollucos y se cortan en tiras largas delgadas. En una olla " +
+                "con aceite, se fríe el ajo, ají panca molido, charqui cortado finito o carne de res, pimienta, sal y comino. Se " +
+                "revuelve bien y se espera que todo esté bien cocido para agregar el olluco picado. Se echa caldo y se tapa. Cuando " +
+                "está listo se echa un poco de aceite y al servir se le vierte perejil fresco picado. ",
+                R.drawable.olluquito_con_charqui, "Cuzco"));
+        platoCuzcoList.add(new PlatoEntity(106, "Chiri uchu", 3.0, "En la gastronomía cuzqueña existe un plato representativo que es " +
+                "muy conocido llamado Chiri uchu que significa ají frío. Es un delicioso potaje que se sirve frío y que se consume en " +
+                "las fiestas de Corpus Christi, en el mes de junio, se festeja en el Sacsayhuamán. La comida es fría, se prepara a base " +
+                "de cuy al horno, gallina hervida, salchicha serrana, queso fresco, cancha tostada, rocoto, huevera de trucha, cebollita " +
+                "china, morcilla, cochayuyo o algas, chorizo, caldo de gallina, charqui o chalona y una tortilla a base de harina de maíz. " +
+                "Se pone todo a hervir y se sirve junto en un sólo plato.", R.drawable.chiri_uchu, "Cuzco"));
+        platoCuzcoList.add(new PlatoEntity(107, "Pepian de cuy", 5.0, "Es un guiso de choclo y carne de cuy, aderezado con cebolla y " +
+                "ají panca. Luego de pelarlo en agua hervida, se le saca las vísceras al cuy y se le corta en varios trozos, los " +
+                "cuales se polvorean con harina de maíz para freirlo en aceite bien caliente. En otra olla se prepara un aderezo " +
+                "de cebolla, ajo doradito y ají colorado. Se aderezan los cuyes y se les agrega maní al gusto. El plato se sirve " +
+                "con arroz y papas huayro sancochadas. ", R.drawable.pepian_de_cuy, "Cuzco"));
+        platoCuzcoList.add(new PlatoEntity(108, "Timpu", 4.5, "Es un plato típico de la época de carnaval. Es un clado que lleva " +
+                "diversas carnes, verduras, legumbres y más. Se deja hervir un pecho de vaca o cordero, tocino. Cuando está en " +
+                "pleno hervor se agrega hojas de col, papas, garbanzos y arroz, ya preparados. En otra olla se hierven camotes, " +
+                "peras y yucas. El caldo se sirve aparte.", R.drawable.timpu, "Cuzco"));
+    }
+
+    private void platosPuno(){
+
+        platoPunoList = new ArrayList<>();
+
+        platoPunoList.add(new PlatoEntity(109, "Chupe de quinua", 3.0, "Es un plato muy alimenticio. Es a base de quinua, se cocina " +
+                "en agua fría sin sal. Se le agrega verduras. Se ponen todos los ingredientes en una olla de agua con sal, la cabeza " +
+                "y espinazo del pescado o mariscos para que se cocinen. Se cuela el caldo y se le echa la verduras, las papas, la " +
+                "quinua y el pescado. Se pone a freir en aceite caliente se agrega cebollas y tomate. ",
+                R.drawable.chupe_de_quinua, "Puno"));
+        platoPunoList.add(new PlatoEntity(110, "Trucha frita", 3.5, "Es un pescado que se adquiere del Lago Titicaca que contiene " +
+                "proteínas, así como vitaminas y minerales. La trucha frita es un alimento muy nutritivo porque su carne tiene potasio, " +
+                "fósforo, magnesio, hierro y zinc. Este platillo es muy sencillo de preparar, usualmente se acompaña con ensalada criolla" +
+                " y papas fritas o sancochadas. Se fríe la trucha, se acompaña con papas, choclos y chuño sancochados o también puede " +
+                "ser con papas fritas y arroz, por lo general se agrega ensalada criolla como en muchas comidas peruanas. Por su " +
+                "apariencia, para muchos turistas es el salmón peruano, sin embargo la trucha del lago tiene un sabor excepcional. ",
+                R.drawable.trucha_frita, "Puno"));
+        platoPunoList.add(new PlatoEntity(111, "Caldo de cabeza", 4.5, "Para preparar este plato se debe poner a cocer una cabeza de " +
+                "chancho (cerdo) o de cordero en trozos. Se le agrega cebolla, ajos, papas peladas, chuño negro o blanco. Al servirlo " +
+                "hay que presentarlo con aderezo de ají panca rojo, cebolla y tomate, todos estos productos se esparcen en el sancochado." +
+                " El caldo se sirve aparte. Actualmente se acompaña con arroz. ", R.drawable.caldo_de_cabeza, "Puno"));
+        platoPunoList.add(new PlatoEntity(112, "Chairo", 4.5, "Es una sopa espesa y sabrosa a base de papas, chuño, carne y otros " +
+                "ingredientes. Muy apetitoso y de alto poder nutritivo. Es la sopa favorita de los pobladores que regresan después " +
+                "de terminar una jornada. Es un caldillo sustancioso preparado con carne de cordero, chalona (carne seca de cordero), " +
+                "verduras(zanahoria, apio, habas, ajo, cebolla), papa, chuño negro, sal y orégano.", R.drawable.chairo, "Puno"));
+        platoPunoList.add(new PlatoEntity(113, "Chicharrón de alpaca", 2.5, "Es un delicioso y nutritivo potaje de Puno. Primero se " +
+                "cuece la carne hasta que se consume el agua, luego con la misma grasa se dora. Se sirve con chuño, papa y maíz serrano " +
+                "tostado (cancha serrana). Algunas veces se sirve con salsa criolla. La carne de alpaca es reconocida como uno de los" +
+                " alimentos más nutritivos, pues posee 22% de proteínas, 56 miligramos de colesterol por cada 100 gramos de carne y " +
+                "un contenido graso de 3% por lo que es considerada un producto light por excelencia. Actualmente se consume también " +
+                "entre las comidas de Cusco, Cajamarca y otras regiones. ", R.drawable.chicharron_de_alpaca, "Puno"));
+        platoPunoList.add(new PlatoEntity(114, "Thimpo de Carachi", 5.0, "Se prepara a base de pescado Carachi, pescado típico del " +
+                "lago Titicaca que mide de 10 a 15 cms. El carachi tiene alto contenido de fósforo. Si deseas puedes usar pejerrey o " +
+                "mauri en vez de carachi. Se sirve con papas y chuños enteros, muña, cebolla, ajo y ají.",
+                R.drawable.thimpo_de_carachi, "Puno"));
+    }
+
     public List<PlatoEntity> getPlatoCajamarcaList() {
         return platoCajamarcaList;
     }
@@ -245,6 +360,9 @@ public class PlatoSierraRepository {
     public List<PlatoEntity> getPlatoJuninList() { return platoJuninList; }
     public List<PlatoEntity> getPlatoHuancavelicaList() {return platoHuancavelicaList; }
     public List<PlatoEntity> getPlatoAyacuchoList() { return platoAyacuchoList; }
+    public List<PlatoEntity> getPlatoApurimacList() { return platoApurimacList; }
+    public List<PlatoEntity> getPlatoCuzcoList() { return platoCuzcoList; }
+    public List<PlatoEntity> getPlatoPunoList() { return platoPunoList; }
 
     public void updatePlatoSierraById(int platoId, PlatoEntity platoEntity)
     {
@@ -270,6 +388,15 @@ public class PlatoSierraRepository {
                 break;
             case "Ayacucho":
                 platoList = platoAyacuchoList;
+                break;
+            case "Apurimac":
+                platoList = platoApurimacList;
+                break;
+            case "Cuzco":
+                platoList = platoCuzcoList;
+                break;
+            case "Puno":
+                platoList = platoPunoList;
                 break;
         }
         for (int i = 0; i < this.platoList.size(); i++) {
