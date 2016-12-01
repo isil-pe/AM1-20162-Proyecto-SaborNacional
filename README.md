@@ -23,6 +23,6 @@
 
 ## Diagrama
 
-![](https://github.com/isil-pe/AM1-20162-Proyecto-SaborNacional/blob/master/am1_diagrama1.jpg")
+<img src="https://github.com/isil-pe/AM1-20162-Proyecto-SaborNacional/blob/master/am1_diagrama1.jpg" />
 
-![](https://github.com/isil-pe/AM1-20162-Proyecto-SaborNacional/blob/master/am1_diagrama2.jpg")
+<img src="https://github.com/isil-pe/AM1-20162-Proyecto-SaborNacional/blob/master/am1_diagrama2.jpg" />
