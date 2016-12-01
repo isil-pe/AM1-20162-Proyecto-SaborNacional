@@ -24,4 +24,4 @@ Tablas
 
 ## Diagrama
 
-![](https://github.com/isil-pe/AM1-20162-Proyecto-SaborNacional/blob/master/sn_diagrama_a.PNG)
+<img src="https://github.com/isil-pe/AM1-20162-Proyecto-SaborNacional/blob/master/sn_diagrama_a.PNG" />
