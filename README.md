@@ -19,7 +19,7 @@ Funcionalidades :
     
     - Detalles de la app, región, provincia y plato típico 
     
-    - Guardar y cancelar como "favorito" el plato elegido
+    - Guardar o cancelar como "favorito" el plato elegido
 
 ## Base de Datos
 Tablas
